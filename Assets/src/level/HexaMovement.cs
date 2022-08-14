@@ -108,7 +108,6 @@ public class HexaMovement : MonoBehaviour
 
     protected void OnMouseDown()
     {
-        Debug.Log("HELE HELE!");
         if (GameManager.IsLevelEnded())
             return;
 
