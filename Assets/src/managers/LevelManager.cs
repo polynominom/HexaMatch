@@ -5,25 +5,9 @@ public class LevelManager: Singleton<LevelManager>
     public bool LevelPassedBefore = false;
     private HexaState activeState;
     private Dictionary<int, int> LevelIdSceneIdMap;
-    // levelIds that are allowed to be passed
-    private List<int> commonLevelIds;
-    private List<int> hiddenLevels1;
-    private List<int> hiddenLevels2;
 
     protected LevelManager()
     {
-        commonLevelIds = new List<int>() {
-            1,2,4,5,6,7,9,10,12,13,14
-        };
-
-        hiddenLevels1 = new List<int>() {
-            21,22,23
-        };
-
-        hiddenLevels2 = new List<int>() {
-            18,19,20
-        };
-
         LevelIdSceneIdMap = new Dictionary<int, int>();
         for(int i = 1; i <= Constants.LevelCount; ++i)
             LevelIdSceneIdMap.Add(i, i+1);
@@ -67,30 +51,10 @@ public class LevelManager: Singleton<LevelManager>
     public int GetNextLevel()
     {
         int levelId = GetLevelID();
-        for(int i = 0; i < commonLevelIds.Count - 1; ++i)
+        if(levelId+1 <= Constants.LevelCount+1)
         {
-            if (commonLevelIds[i] == levelId)
-                return commonLevelIds[i + 1];
+            return levelId + 1;
         }
-
-        if (commonLevelIds[commonLevelIds.Count - 1] == levelId)
-            return Constants.ID_LEVELS;
-
-        for(int i = 0; i < hiddenLevels1.Count - 1; ++i)
-        {
-            if (hiddenLevels1[i] == levelId)
-                return hiddenLevels1[i + 1];
-        }
-
-        if (hiddenLevels1[hiddenLevels1.Count - 1] == levelId)
-            return Constants.ID_LEVELS;
-
-        for (int i = 0; i < hiddenLevels2.Count - 1; ++i)
-        {
-            if (hiddenLevels2[i] == levelId)
-                return hiddenLevels2[i + 1];
-        }
-
         return Constants.ID_LEVELS;
     }
 
@@ -118,6 +82,21 @@ public class LevelManager: Singleton<LevelManager>
         }
         else
         {
+            if(GameManager.Instance.randomLevelRegister.registeredAndActive)
+            {
+                // random state but clicked from levels
+                var a = GameManager.Instance.randomLevelRegister.registeredLevel;
+                if ( !st.passedLevels.Contains(a) )
+                {
+                    st.passedLevels.Add(a);
+                    st.playerEssenceValue += activeState.LevelUnclaimedValue;
+                }
+                else
+                {
+                    st.playerEssenceValue += activeState.LevelClaimedValue;
+                }
+            }
+
             st.playerEssenceValue += activeState.LevelUnclaimedValue;
         }
             
@@ -134,10 +113,12 @@ public class LevelManager: Singleton<LevelManager>
 
     public int GetSceneIdFromLevelId(int levelId)
     {
-        if (LevelIdSceneIdMap.ContainsKey(levelId))
-            return LevelIdSceneIdMap[levelId];
+        if (levelId <= Constants.LevelCount)
+            return levelId + 1;
+        else if (levelId == Constants.LevelCount + 1)
+            return Constants.ID_LEVELS;
         else
-            return 0;
+            return Constants.ID_HOME;
     }
 
     // Tries to find if the given levels are already passed by the user.

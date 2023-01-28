@@ -6,7 +6,16 @@ public class GeneralUIEventHandler : MonoBehaviour
     {
         if(LevelManager.Instance.IsLevelRandom())
         {
-            GameManager.Instance.Restart();
+            if(GameManager.Instance.randomLevelRegister.registeredAndActive)
+            {
+                GameManager.Instance.randomLevelRegister.Reset();
+                GameManager.Instance.LoadScene(Constants.ID_LEVELS);
+            }
+            else
+            {
+                GameManager.Instance.LoadScene(Constants.ID_HOME);
+            }
+
             return;
         }
 

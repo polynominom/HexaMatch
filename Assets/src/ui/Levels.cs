@@ -21,10 +21,12 @@ public class Levels: MonoBehaviour
             s = st.passedLevels;
         }
 
-        int n = transform.GetChild(0).childCount;
-        for(int i = 1; i < n-4; i++)
+        var content = transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetChild(0);
+        int n = content.childCount;
+        for(int i = 0; i < n; i++)
         {
-            LevelNodeUI l = transform.GetChild(0).GetChild(i).GetComponent<LevelNodeUI>();
+            Debug.Log(i);
+            LevelNodeUI l = content.GetChild(i).GetComponent<LevelNodeUI>();
             bool hasPassed = s.Contains( l.ReferencedLevelId );
 
             if (l == null) continue;
@@ -38,26 +40,5 @@ public class Levels: MonoBehaviour
     public void OnHome()
     {
         GameManager.Instance.LoadScene(Constants.ID_HOME);
-    }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            var st = DataManager.Instance.LoadStatistics();
-            debugLevelIndex = st.passedLevels.Count >= 1 ? st.passedLevels[st.passedLevels.Count - 1] : 0;
-            //Debug.Log("passing " + debugLevelIndex+1);
-            st.passedLevels.Add(debugLevelIndex+1);
-            DataManager.Instance.SaveStatistics(st);
-            GameManager.Instance.Restart();
-        }
-
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-            var st = DataManager.Instance.LoadStatistics();
-            st.passedLevels.Clear();
-            DataManager.Instance.SaveStatistics(st);
-            GameManager.Instance.Restart();
-        }
     }
 }

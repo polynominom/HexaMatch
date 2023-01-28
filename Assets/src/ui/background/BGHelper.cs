@@ -8,7 +8,7 @@ namespace Background
     {
         public readonly static Vector2 HEXA_FACTOR = new Vector2(0.75f, 0.875f);
 
-        public static Vector2 GetPos(uint row, uint col, float size=1f, float zindex=2f)
+        public static Vector3 GetPos(uint row, uint col, float size=1f, float zindex=2f)
         {
             float yfactor = row * HEXA_FACTOR.y;
             float xfactor = col * HEXA_FACTOR.x;

@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
+    // will be activated on extra levels
+    public RandomLevelRegister randomLevelRegister;
+
     private bool LevelEnded = false;
     private AnimationHandler animationHandler = null;
 
@@ -38,6 +41,7 @@ public class GameManager : Singleton<GameManager>
     protected GameManager()
     {
         PlayerEssence = 0;
+        randomLevelRegister = new RandomLevelRegister();
     }
 
     public static bool IsLevelEnded()
@@ -86,6 +90,7 @@ public class GameManager : Singleton<GameManager>
 
         Instance.animationHandler.OnLevelEnd();
         LevelManager.Instance.LevelPassed(Instance.GetCurrentScene());
+        //Instance.randomLevelRegister.Reset();
     }
 
     private void LoadSceneByIndex(int sceneIndex)

@@ -184,7 +184,7 @@ Material:
     - _CullMode: 2
     - _CullModeForward: 2
     - _Cutoff: 0.5
-    - _D_FlowSpeed: 0.54
+    - _D_FlowSpeed: 0.1
     - _DepthOffsetEnable: 0
     - _DetailAlbedoScale: 1
     - _DetailNormalScale: 1
@@ -209,7 +209,7 @@ Material:
     - _EnableFogOnTransparent: 0
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
-    - _FlowStrength: 0.44
+    - _FlowStrength: 0.17
     - _Glossiness: 0
     - _HeightAmplitude: 0.02
     - _HeightCenter: 0.5
@@ -286,7 +286,7 @@ Material:
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
-    - _U_FlowSpeed: 0.48
+    - _U_FlowSpeed: 0.1
     - _UseAoMap: 0
     - _UseColorMap: 0
     - _UseEmissiveIntensity: 0
