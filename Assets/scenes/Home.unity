@@ -258,6 +258,26 @@ PrefabInstance:
       propertyPath: m_OcclusionCulling
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4458532039846036839, guid: eed3d3fd896254c27a80efbb7a591624,
+        type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458532039846036839, guid: eed3d3fd896254c27a80efbb7a591624,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.08627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458532039846036839, guid: eed3d3fd896254c27a80efbb7a591624,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.0627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458532039846036839, guid: eed3d3fd896254c27a80efbb7a591624,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.05490196
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eed3d3fd896254c27a80efbb7a591624, type: 3}
 --- !u!20 &1339357519 stripped

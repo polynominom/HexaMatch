@@ -8,7 +8,7 @@ public class EndGameLogic: Singleton<EndGameLogic>
     private GameObject Level = null;
     private GameObject GoalState = null;
     private List<HexaNode> GoalNodes;
-    private ParticleSystem particleSystem;
+    private ParticleSystem _particleSystem;
     protected EndGameLogic()
     {
 
@@ -21,7 +21,7 @@ public class EndGameLogic: Singleton<EndGameLogic>
 
     private void Start()
     {
-        particleSystem = GetComponent<ParticleSystem>();
+        _particleSystem = GetComponent<ParticleSystem>();
         Level = GameObject.FindGameObjectWithTag("Level");
         GoalState = GameObject.FindGameObjectWithTag("Goal");
         if (GoalState == null)
@@ -71,7 +71,7 @@ public class EndGameLogic: Singleton<EndGameLogic>
     public void StartLevelEndParticles()
     {
         // Every hexanode is same = it is the end so start particle system.
-        if (particleSystem != null)
-            particleSystem.Play();
+        if (_particleSystem != null)
+            _particleSystem.Play();
     }
 }

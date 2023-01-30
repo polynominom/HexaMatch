@@ -141,11 +141,6 @@ public class ProceduralHexagonalLevelGenerator : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-
-        if(Input.GetKeyDown(KeyCode.T))
-        {
-            int breakpoint = 0;
-        }
     }
 
     public static double GetSomeRandomNumber()
@@ -165,7 +160,8 @@ public class ProceduralHexagonalLevelGenerator : MonoBehaviour
 
         return coords;
     }
-    /* I DONT KNOW AAAAA
+
+    /* Possibilities
      hexaType = {
     "red"    : ["red", 0.2],
     "green"  : ["green", 0.15],

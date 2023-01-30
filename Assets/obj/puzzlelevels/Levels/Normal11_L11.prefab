@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195264124287158643}
   m_RootOrder: 1
@@ -43,6 +44,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -106,7 +108,6 @@ GameObject:
   - component: {fileID: 1609940009555523933}
   - component: {fileID: 4345998167588107483}
   - component: {fileID: 492561859786644464}
-  - component: {fileID: 7359872002142573604}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -124,6 +125,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1718755959038317934}
   m_RootOrder: 0
@@ -139,6 +141,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -210,19 +213,6 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &7359872002142573604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153891459803011629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 
 --- !u!1 &348127663497331955
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,6 +243,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.3709268, y: 1.0988055, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1608221816361948358}
   - {fileID: 6911298017922497433}
@@ -270,6 +261,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -405,6 +397,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6142742100241519839}
   m_RootOrder: 1
@@ -420,6 +413,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -483,7 +477,6 @@ GameObject:
   - component: {fileID: 1608221816361948358}
   - component: {fileID: 8084781128431355288}
   - component: {fileID: 8380263430921906395}
-  - component: {fileID: 8886346341346212893}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -501,6 +494,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2983816144409470675}
   m_RootOrder: 0
@@ -516,6 +510,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -587,19 +582,6 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &8886346341346212893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 728394087409207543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 
 --- !u!1 &764258954517075192
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,7 +593,7 @@ GameObject:
   - component: {fileID: 764258954517075194}
   - component: {fileID: 764258954517075193}
   m_Layer: 0
-  m_Name: Level4
+  m_Name: Normal11_L11
   m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,6 +609,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.3709268, y: -0.0988056, z: -4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4672375983715332616}
   - {fileID: 1789223984876007154}
@@ -656,8 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ccda17524f34124baf4342c94b690e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generate: 0
-  background: {fileID: 0}
+  LevelId: -1
   h: {fileID: 3952612699010346073, guid: 22cc0df67e9c5437c981e6387572eccc, type: 3}
   materials:
   - {fileID: 2100000, guid: 6d55cbdff437640838e350235e1d8063, type: 2}
@@ -668,6 +650,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: d6d83ccc29d9b4ede913f0550540544e, type: 2}
   - {fileID: 2100000, guid: 17e5ce5d52f874db89267751791c75bb, type: 2}
   - {fileID: 2100000, guid: 9b2a60c891f65440bbbf88b5c13e8bae, type: 2}
+  LevelUnclaimedValue: -1
 --- !u!1 &800710184615056155
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +679,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4672375983715332616}
   m_RootOrder: 1
@@ -711,6 +695,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -791,6 +776,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6976196464006560474}
   m_RootOrder: 1
@@ -806,6 +792,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -886,6 +873,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1789223984876007154}
   m_RootOrder: 1
@@ -901,6 +889,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -983,6 +972,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.2369522, y: 0.5988056, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1609940009555523933}
   - {fileID: 1832796887650139186}
@@ -1000,6 +990,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1135,6 +1126,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4437891360624502567}
   m_RootOrder: 1
@@ -1150,6 +1142,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1232,6 +1225,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.361124, y: -0.9011944, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8373821424463449653}
   - {fileID: 8021692246926710310}
@@ -1249,6 +1243,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1386,6 +1381,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.3709268, y: -1.9011945, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8023722548469962011}
   - {fileID: 4605619215224042620}
@@ -1403,6 +1399,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1521,7 +1518,6 @@ GameObject:
   - component: {fileID: 7394073930804665066}
   - component: {fileID: 6202032452492089212}
   - component: {fileID: 7932925732352356110}
-  - component: {fileID: 1505215851692211072}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -1539,6 +1535,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90727345890904191}
   m_RootOrder: 0
@@ -1554,6 +1551,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1625,19 +1623,6 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &1505215851692211072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3012611857110169303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 
 --- !u!1 &3268475432011542177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1649,7 +1634,6 @@ GameObject:
   - component: {fileID: 1237723024883767014}
   - component: {fileID: 9080788629434179298}
   - component: {fileID: 195500136677202688}
-  - component: {fileID: 9040584248679479739}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -1667,6 +1651,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4437891360624502567}
   m_RootOrder: 0
@@ -1682,6 +1667,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1753,19 +1739,6 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &9040584248679479739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3268475432011542177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 
 --- !u!1 &4130879644319721910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,6 +1769,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.2369522, y: -0.4011944, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2005979384415592860}
   - {fileID: 4600709301593445102}
@@ -1813,6 +1787,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1931,7 +1906,6 @@ GameObject:
   - component: {fileID: 3699650958013702319}
   - component: {fileID: 7992937234553151815}
   - component: {fileID: 879844339676073650}
-  - component: {fileID: 7390927285724368441}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -1949,6 +1923,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195264124287158643}
   m_RootOrder: 0
@@ -1964,6 +1939,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2035,19 +2011,6 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &7390927285724368441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4143806153849223458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 
 --- !u!1 &4177622301952905088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,7 +2022,6 @@ GameObject:
   - component: {fileID: 2005979384415592860}
   - component: {fileID: 5511518311417775539}
   - component: {fileID: 6609809653949582838}
-  - component: {fileID: 184420082581606249}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -2077,6 +2039,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6142742100241519839}
   m_RootOrder: 0
@@ -2092,6 +2055,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2163,19 +2127,6 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &184420082581606249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4177622301952905088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 
 --- !u!1 &4289421014626384511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,6 +2157,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.3709268, y: -0.9011944, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 985937086055590935}
   - {fileID: 7180622994116688347}
@@ -2223,6 +2175,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2358,6 +2311,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3640936716230205601}
   m_RootOrder: 1
@@ -2373,6 +2327,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2453,6 +2408,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 636009097604827949}
   m_RootOrder: 1
@@ -2468,6 +2424,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2548,6 +2505,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90727345890904191}
   m_RootOrder: 1
@@ -2563,6 +2521,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2626,7 +2585,6 @@ GameObject:
   - component: {fileID: 985937086055590935}
   - component: {fileID: 6616149174284773616}
   - component: {fileID: 4138221509736866599}
-  - component: {fileID: 6988205868171200433}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -2644,6 +2602,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1789223984876007154}
   m_RootOrder: 0
@@ -2659,6 +2618,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2730,19 +2690,6 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &6988205868171200433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4960932868093806539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 
 --- !u!1 &5071454257969814453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2773,6 +2720,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.4950986, y: -0.4011944, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8985358367804706804}
   - {fileID: 6350350290474592833}
@@ -2790,6 +2738,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2908,7 +2857,6 @@ GameObject:
   - component: {fileID: 5181396379195353609}
   - component: {fileID: 6407148676667158458}
   - component: {fileID: 6383716821147566809}
-  - component: {fileID: 5896845829184592502}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -2926,6 +2874,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4672375983715332616}
   m_RootOrder: 0
@@ -2941,6 +2890,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3012,19 +2962,6 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &5896845829184592502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5570229084921032375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 
 --- !u!1 &5645310564603333880
 GameObject:
   m_ObjectHideFlags: 0
@@ -3036,7 +2973,6 @@ GameObject:
   - component: {fileID: 8985358367804706804}
   - component: {fileID: 3684573580564983926}
   - component: {fileID: 3836556907284407186}
-  - component: {fileID: 82165199083988546}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -3054,6 +2990,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3496284713545662345}
   m_RootOrder: 0
@@ -3069,6 +3006,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3140,19 +3078,6 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &82165199083988546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5645310564603333880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 
 --- !u!1 &5873366391667708102
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,6 +3106,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1718755959038317934}
   m_RootOrder: 1
@@ -3196,6 +3122,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3278,6 +3205,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.4950986, y: -1.4011945, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3552486438148877111}
   - {fileID: 304425207235359444}
@@ -3295,6 +3223,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3432,6 +3361,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.361124, y: 0.0988056, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7394073930804665066}
   - {fileID: 5645677114481992092}
@@ -3449,6 +3379,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3567,7 +3498,6 @@ GameObject:
   - component: {fileID: 8023722548469962011}
   - component: {fileID: 375670248364764250}
   - component: {fileID: 1902382597647048830}
-  - component: {fileID: 2239799731197605497}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -3585,6 +3515,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 636009097604827949}
   m_RootOrder: 0
@@ -3600,6 +3531,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3671,19 +3603,6 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &2239799731197605497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7422762978985194832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 
 --- !u!1 &7835045428359885405
 GameObject:
   m_ObjectHideFlags: 0
@@ -3712,6 +3631,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6652549313040111347}
   m_RootOrder: 1
@@ -3727,6 +3647,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3809,6 +3730,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.361124, y: 1.0988055, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1237723024883767014}
   - {fileID: 989560430305163802}
@@ -3826,6 +3748,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3963,6 +3886,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.2271492, y: 0.5988056, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3699650958013702319}
   - {fileID: 4250979691147863265}
@@ -3980,6 +3904,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4098,7 +4023,6 @@ GameObject:
   - component: {fileID: 3422166098050513682}
   - component: {fileID: 2555320172664054091}
   - component: {fileID: 5473495627498604226}
-  - component: {fileID: 7873326163529696564}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -4116,6 +4040,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3640936716230205601}
   m_RootOrder: 0
@@ -4131,6 +4056,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4202,19 +4128,6 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &7873326163529696564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8197640634428712691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 
 --- !u!1 &8231586579919031245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4243,6 +4156,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2983816144409470675}
   m_RootOrder: 1
@@ -4258,6 +4172,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4340,6 +4255,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.3709268, y: 0.0988056, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5181396379195353609}
   - {fileID: 6151536474995858467}
@@ -4357,6 +4273,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4492,6 +4409,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3496284713545662345}
   m_RootOrder: 1
@@ -4507,6 +4425,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4570,7 +4489,6 @@ GameObject:
   - component: {fileID: 8373821424463449653}
   - component: {fileID: 5088112501623157042}
   - component: {fileID: 7369727989728538836}
-  - component: {fileID: 5035518148920166908}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -4588,6 +4506,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6652549313040111347}
   m_RootOrder: 0
@@ -4603,6 +4522,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4674,19 +4594,6 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &5035518148920166908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8504254844431267009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 
 --- !u!1 &8827144366875101020
 GameObject:
   m_ObjectHideFlags: 0
@@ -4717,6 +4624,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.361124, y: -1.9011945, z: 4.547178}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3422166098050513682}
   - {fileID: 1906475479811968134}
@@ -4734,6 +4642,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4852,7 +4761,6 @@ GameObject:
   - component: {fileID: 3552486438148877111}
   - component: {fileID: 554412719326667173}
   - component: {fileID: 2038467277986729885}
-  - component: {fileID: 7802542417752020824}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -4870,6 +4778,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6976196464006560474}
   m_RootOrder: 0
@@ -4885,6 +4794,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4956,16 +4866,3 @@ PolygonCollider2D:
       - {x: -0.16, y: -0.28}
       - {x: 0.16, y: -0.28}
       - {x: 0.32, y: 0}
---- !u!114 &7802542417752020824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9201388606462210615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385e70a92fda74381a5714ead69f36f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighborIds: 

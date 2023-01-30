@@ -6,7 +6,6 @@ using System.Linq;
 public class Levels: MonoBehaviour
 {
     public Material passedMat;
-    private int debugLevelIndex = 1;
     void Start()
     {
         OpenLevels();
@@ -25,7 +24,6 @@ public class Levels: MonoBehaviour
         int n = content.childCount;
         for(int i = 0; i < n; i++)
         {
-            Debug.Log(i);
             LevelNodeUI l = content.GetChild(i).GetComponent<LevelNodeUI>();
             bool hasPassed = s.Contains( l.ReferencedLevelId );
 

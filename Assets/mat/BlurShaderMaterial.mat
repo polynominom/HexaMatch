@@ -24,21 +24,20 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BlurShaderMaterial
-  m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
-  m_ValidKeywords:
+  m_Shader: {fileID: 4800000, guid: faa8f4310a4874b86a3a20a4f15c1420, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _ALPHATEST_ON
   - _DISABLE_SSR_TRANSPARENT
   - _ENABLE_FOG_ON_TRANSPARENT
   - _NORMALMAP_TANGENT_SPACE
   - _REFRACTION_PLANE
   - _SURFACE_TYPE_TRANSPARENT
-  m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2999
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses:
   - RayTracingPrepass
   - TransparentDepthPostpass
@@ -194,7 +193,7 @@ Material:
     - _Amplitude: 1
     - _Anisotropy: 0
     - _BlendMode: 0
-    - _BumpAmt: 9
+    - _BumpAmt: 10
     - _BumpScale: 1
     - _CoatMask: 0
     - _ColorMask: 15
@@ -211,8 +210,8 @@ Material:
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
-    - _DistortionDamper: 2
-    - _DistortionSpreader: 2000
+    - _DistortionDamper: 6.42
+    - _DistortionSpreader: 2002.72
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 1
@@ -262,7 +261,8 @@ Material:
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 1
-    - _Size: 1
+    - _Size: 3
+    - _Slide: 0.5
     - _Smoothness: 0.033
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
@@ -277,12 +277,12 @@ Material:
     - _Stencil: 1
     - _StencilComp: 0
     - _StencilOp: 0
-    - _StencilReadMask: 255
+    - _StencilReadMask: 254.85
     - _StencilRef: 0
     - _StencilRefDepth: 0
     - _StencilRefGBuffer: 2
     - _StencilRefMV: 32
-    - _StencilWriteMask: 6
+    - _StencilWriteMask: 8.9
     - _StencilWriteMaskDepth: 8
     - _StencilWriteMaskGBuffer: 14
     - _StencilWriteMaskMV: 40
@@ -317,7 +317,9 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0, g: 0.8462277, b: 1, a: 0.08627451}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0, g: 0.8462277, b: 1, a: 0.08627451}
+    - _Color: {r: 0.19357423, g: 0.42916152, b: 0.4716981, a: 0.08627451}
+    - _ColorA: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorB: {r: 0, g: 0, b: 0, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}

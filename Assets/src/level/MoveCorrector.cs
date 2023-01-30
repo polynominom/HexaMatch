@@ -11,9 +11,11 @@ public class MoveCorrector
 
     public Vector3 headLimitPosition;
     public Vector3 tailLimitPosition;
+    /*
+    Enforcing a precision offset possible. Use this if needed.
 
     private float precisionOffset = 0.01f;
-
+    */
     public MoveCorrector(HexaNode head, HexaNode tail, HexaDirection direction)
     {
         this.direction = direction;

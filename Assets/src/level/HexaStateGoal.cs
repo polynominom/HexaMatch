@@ -10,9 +10,7 @@ public class HexaStateGoal
     public HexaStateGoal(List<HexaNode> allNodes)
     {
         this.allNodes = new List<HexaNode>(allNodes);
-        int b = 123;
         Randomize();
-        int a = 123;
     }
 
     private void Randomize()

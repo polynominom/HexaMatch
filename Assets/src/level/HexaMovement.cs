@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class HexaMovement : MonoBehaviour
 {
-    private float duration=0.25f;
-
     public Vector3 mOffset;
     public Vector3 oldPos;
     public HexaDirection movementDir = HexaDirection.up;

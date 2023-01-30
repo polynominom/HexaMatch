@@ -39,7 +39,6 @@ public class LevelNodeUI: MonoBehaviour
 
     public void ApplyPassedColor(Material mat)
     {
-        Debug.Log("asd");
         ApplyColor(mat);
     }
 
