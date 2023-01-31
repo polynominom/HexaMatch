@@ -70,5 +70,10 @@ public class HexaState: MonoBehaviour
         {
             GameManager.FinishLevel();
         }
+
+        if(Input.GetKeyDown(KeyCode.S))
+        {
+            ScreenCapture.CaptureScreenshot("/Users/cagriyildiz/screenshots/screenshot.png");
+        }
     }
 }
